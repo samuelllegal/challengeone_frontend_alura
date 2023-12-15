@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 40px;
+    display: flex;
+    background: #F3F5FC;
+    height: 100%;
+    gap: 80px;
+}
+
+p {
+    font-family: 'inter';
+}
+
+.espaco_logo {
+    margin: 0px 44px;
+}
+
+.espaco_logo img{
+    width: 60px;
+    height: 60px;
+}
+
+.base {
+    width: 100%;
+    margin-top: 60px;
+}
+
+#frase_inicial{
+    display: flex;
+    width: 100%;
+    height: 700px;
+    background: #F3F5FC;
+    border: 0;
+
+    font-family: 'inter';
+    font-size: 32px;
+    font-weight: 400;
+    color: #0A3871;
+    text-decoration: none;
+    outline: none;
+    word-wrap: break-word
+}
+
+#frase_inicial::placeholder{
+    font-family: 'inter';
+    font-size: 32px;
+    font-weight: 400;
+    color: #0A3871;
+    text-decoration: none;
+}
+
+.texto p{
+    margin: 16px 0px;
+    font-family: 'inter';
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.botoes {
+    display: flex;
+    gap: 24px;
+}
+
+.criptografar {
+    padding: 24px;
+    text-align: center;
+    background: #0A3871;
+    border-radius: 24px;
+    width: 30%;
+    height: auto;
+    color: #FFFFFF;
+}
+
+.descriptografar{
+    padding: 24px;
+    text-align: center;
+    background: #D8DFE8;
+    color: #0A3871;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0A3871;
+    border-radius: 24px;
+    width: 30%;
+    height: auto;
+}
+
+.criptografar p, .descriptografar p{
+    font-family: 'inter';
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+.criptografar p, .descriptografar p{
+    margin: 0px;
+    display: block;
+}
+
+.caixa{
+    padding: 32px;
+    background: #fff;
+    border-radius: 32px;
+    width: auto;
+    height: 944px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 24px 32px rgba(0, 0, 0, 0.122);
+}
+
+.sem_resposta img{
+    width: 336px;
+    height: 304px;
+    margin-bottom: 32px;
+}
+
+.erro{
+    color: #343A40;
+    font-family: 'inter';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.info{
+    text-align: center;
+    color: #495057;
+    font-family: 'inter';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.com_resposta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.frase_final{
+    text-align: left;
+    color: #0A3871;
+    font-family: 'inter';
+    font-size: 24px;
+    font-weight: 400;
+    height: 800px;
+    width: 466px;
+    word-wrap: break-word
+}
+
+.copiar {
+    display: inline-block;
+    padding: 32px;
+    text-align: center;
+    background: #fff;
+    color: #0A3871;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0A3871;
+    border-radius: 24px;
+    width: 400px;
+    height: auto;
+}
+
+.copiar p{
+    text-align: center;
+    color: #0A3871;
+    font-family: 'inter';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: flex;
+}
+
+@media (max-width:768px) {
+    body{
+        display: block;
+    }
+    
+    .caixa{
+        margin-top: 64px;
+        height: auto;
+
+    }
+
+    .sem_resposta img{
+        display: none;
+    }
+
+    .com_resposta{
+        height: auto;
+    }
+    
+    .frase_final{
+        height: auto;
+        width: 100%;
+    }
+
+    .copiar {
+        width: 77%;
+        margin: 0px 32px;
+    }
+
+    .copiar p {
+        width: auto;
+    }
+
+    .criptografar{
+        width: 84%;
+     }
+    
+     .descriptografar {
+        width: 84%;
+     }
+}
+
+@media (max-width: 426px){
+ .botoes {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .criptografar{
+    width: 84%;
+ }
+
+ .descriptografar {
+    width: 84%;
+ }
+
+}
